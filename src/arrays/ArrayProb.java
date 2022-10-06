@@ -1,5 +1,9 @@
 package arrays;
 
+/**
+ * @author Sai Krishna
+ *
+ */
 public class ArrayProb {
 
 	public static void main(String[] args) {

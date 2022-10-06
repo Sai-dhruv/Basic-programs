@@ -26,6 +26,7 @@ public class SortedExample {
 		Employee employee_1 = data.data().get(0);
 		Employee employee_2 = data.data().get(1);
 		
+		
 		//(employee_1, employee_2) -> employee_1.getName().compareTo(employee_2.getName());
 		
 		Stream<String> skillStream2 = list.stream().flatMap(e->e.getSkills().stream());

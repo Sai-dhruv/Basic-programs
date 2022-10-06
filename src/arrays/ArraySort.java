@@ -1,6 +1,10 @@
 package arrays;
 import java.util.Arrays;
 
+/**
+ * @author Sai Krishna
+ *
+ */
 public class ArraySort {
 
 	public static void main(String[] args) {

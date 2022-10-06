@@ -10,6 +10,10 @@ public class Employee {
 	private char gender;
 	private List<Address> addressList;
 	private List<String> skills;
+	private String firstName;
+	private String lastName;
+	
+	
 	
 	
 	public List<String> getSkills() {
@@ -47,6 +51,18 @@ public class Employee {
 	}
 	public void setAddressList(List<Address> addressList) {
 		this.addressList = addressList;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	
