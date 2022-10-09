@@ -4,3 +4,7 @@ String API changes
 Collection.ToArray(intFunction)
 Files.readString() and Files.writeString()
 Optiona.isEmpty()
+
+
+
+https://www.baeldung.com/java-collection-toarray-methods
