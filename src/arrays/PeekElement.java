@@ -14,9 +14,6 @@ public class PeekElement {
 			if(n>arr[i]){
 				result = i;
 			}
-
-
-
 		}
 		System.out.println(result);
 	}

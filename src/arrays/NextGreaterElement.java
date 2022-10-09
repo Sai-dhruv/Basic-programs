@@ -17,7 +17,7 @@ public class NextGreaterElement {
 				}
 			}
 			a1[i] = next;
-			System.out.println(i+":"+next);
+			//System.out.println(i+":"+next);
 		}
 		System.out.println(Arrays.toString(a1));
 	}

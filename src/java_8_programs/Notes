@@ -12,6 +12,14 @@ Pipeline of operations may contain any number of intermediate operations, but th
 that too at the end of pipeline. Moreover, Intermediate operations are lazily loaded. When you call intermediate operations, they are actually not executed. They are just stored in the memory and executed when the terminal operation is called on the stream.
 
 
+Why we need a Static Method in Interface ?
+
+If you want to provide some implementation in your interface and you don’t want this implementation to be overridden 
+in the implementing class, then you can declare the method as static. Hence, we can secure an implementation by having it
+in static method as implementing classes can’t override it. Moreover, we define static methods inside classes to use them
+as general utility methods. Similarly, we can define static methods inside interfaces to use them as general utility 
+methods.
+
 
 
 Link : https://javatechonline.com/stream-api-in-java-8/#1_Using_Streamof_method

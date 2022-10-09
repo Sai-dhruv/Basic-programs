@@ -11,7 +11,7 @@ public class ArrayProb {
 		
 		int a[] = {3,2,4};
 		int target = 5;
-		prob(a, 0);
+		prob(a, target);
 		
 		
 	}
