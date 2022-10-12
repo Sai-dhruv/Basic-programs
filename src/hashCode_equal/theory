@@ -1,0 +1,64 @@
+java.util.HashMap implements Hash table data structure. It maintains an array of buckets.
+
+The hashCode() of a particular key object is mapped to a bucket array index.
+
+Multiple keys are allowed to have same hashcode. That's why each bucket can contain multiple key/value pair (HashMap entry).
+
+Entries, within a bucket, are arranged via Linked data structure.
+
+During HashMap#get(key) call, first a bucket is selected by mapping the key's hashCode to the bucket index, then the target entry is searched by calling equals() method on the key.
+
+If two keys have same hash per hashCode() method then they should not be same per equal() method
+
+
+
+
+# ###########  Special Attention When Using in ORM  ######################################
+If you’re dealing with an ORM, make sure always to use getters and never use the field references in hashCode() and equals(). Because in ORM, occasionally fields are lazy loaded and not available until we call their getter methods.
+
+For example, In our Employee class if we use e1.id == e2.id. It is very much possible that id field is lazy-loaded. So, in this case, id field inside the methods might be zero or null, and thus resulting in incorrect behavior.
+
+But if uses e1.getId() == e2.getId(), we can be sure even if the field is lazy-loaded, calling the field getter will populate the field first.
+
+If you feel I am missing something or wrong somewhere, please leave a comment. I will update this post again to help others.
+
+
+
+
+
+Learn Below Topics :
+
+HashMap
+Hash table in DS
+what is bucket 
+what is equal & hashcode and how it will work with program ?
+what is Linked List with example ?
+what is bucket concept ?
+
+what is direct access table?
+
+
+
+NOTE :
+A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, 
+from which the desired value can be found. During lookup, 
+the key is hashed and the resulting hash indicates where the corresponding value is stored.
+
+
+
+
+
+
+
+Refer : 
+
+https://www.logicbig.com/tutorials/core-java-tutorial/java-collections/hash-map-equal-and-hash-code.html
+
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html
+
+https://en.wikipedia.org/wiki/Hash_table
+
+https://howtodoinjava.com/java/basics/java-hashcode-equals-methods/
+
+https://www.geeksforgeeks.org/hashing-set-1-introduction/
+
